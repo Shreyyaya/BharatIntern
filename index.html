@@ -1,232 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portfolio</title>
-   <link rel="stylesheet" href="style.css">
-   <script src="https://kit.fontawesome.com/6dcd264d12.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="header">
-   <div class="container">
-       
-       <nav>
-           <img src="namee.jpg" class="name">
-           <ul>
-               <li><a href="#header">HOME</a></li>
-               <li><a href="#about">ABOUT</a></li>
-               <li><a href="#services">SERVICES</a></li>
-               <li><a href="#contact">CONTACT</a></li>
-               <li><a href="#portfolio">PORTFOLIO</a></li>
-           </ul>
-       </nav>
-       <div class="header-text">
-            <p>WEB DEVELOPER</p>
-            <H1>Hi, I am <span>Shreya</span></H1>
-       </div>
-   </div>  
-</div> 
-
-<!-------------------------------------------------------------------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="cc.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">ABOUT ME</h1>
-                <p>jhfeugerbuky3cuiryuiy4uyirgb4ugbudiyue
-                   wtrwc784yubi87tx2bctuytgb3uyiydfikawyt
-                   rgb23uiyhchni4dtgfwyuhyurcuvyq2wgtyc78
-                   eyetr6uwf3gtueyg4u76yerfgbueryihy3utkj
-                   hwegrujegtuhjrgthjb4rgthrfjhrhceunr4gn
-                   jn4njururjvn wkurcfnuk4ikjhnyxtunqgwik</p>
-
-                   <div class="tab-classes">
-                    <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
-                    <p class="tab-links" onclick="opentab('EXPERIENCE')">EDUCATION</p>
-                    <p class="tab-links" onclick="opentab('EDUCATION')">PROJECTS</p>
-                   </div>
-
-                   <div class="tab-contents active-tab" id="SKILLS">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing interfaces</li>
-                            <li><span>Web Dev</span><br>Web app development</li>
-                            <li><span>App Dev</span><br>Building apps</li>
-                        </ul>
-                   </div>
-
-                   <div class="tab-contents" id="EXPERIENCE">
-                    <ul>
-                        <li><span>2019</span><br>SSC passout</li>
-                        <li><span>2021</span><br>HSC passout</li>
-                        <li><span>2021-2025</span><br>BE</li>
-                    </ul>
-                   </div>
-
-                   <div class="tab-contents" id="EDUCATION">
-                    <ul>
-                     <li><span>HTML,CSS,JS</span><br>CALCULATOR</li>
-                     <li><span>HTML,CSS</span><br>Landing page</li>
-                     <li><span>HTML,CSS,PYTHON</span><br>DDoS attack detection</li>
-                    </ul>
-                   </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!---------------------------------------------------------------------------------->
-<div id="SERVICES">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
+    <div class="header">
+        <nav>
+            <img src="logo.png" class="logo">
             <div>
-                <i class="fa-solid fa-code"></i>
-                <H2>Web design</H2>
-                <p>efyferegrghxgucejbrugeurgurhekjdnhjsfgv
-                   djiwuqryugjjshjbjknjzxbhjbscsfisagdytwd</p>
-                <a href="#">learn more</a>   
+                <button class="language-btn"> English <img src="down-icon.png"></button>
+                <button>Sign In</button>
             </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <H2>UI/UX design</H2>
-                <p>efyferegrghxgucejbrugeurgurhekjdnhjsfgv
-                   djiwuqryugjjshjbjknjzxbhjbscsfisagdytwd</p>
-                <a href="#">learn more</a>   
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <H2>APP design</H2>
-                <p>efyferegrghxgucejbrugeurgurhekjdnhjsfgv
-                   djiwuqryugjjshjbjknjzxbhjbscsfisagdytwd</p>
-                <a href="#">learn more</a>   
-            </div>
+        </nav>
+        <div class="header-content">
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <h3> Watch anywhere. Cancel anytime.</h3>
+        <p>Ready to watch? enter your email to create or restart your membership</p>
+        <form class="email-signup">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Get started</button>
+        </form>
         </div>
     </div>
-</div>
 
-<!------------------------------------------------------------------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My projects</h1>
-        <div class="work-list">
-
-            <div class="work">
-                <img src="work2.jpg.png">
-                <div class="layer">
-                    <b><H2><br><i>LANDING PAGE</i><br></H2>
-                    <p>A landing page is a web page specifically designed
-                    to serve as the entry point for visitors to a website 
-                    or a particular section of a website. It is typically 
-                    created with a specific goal in mind, such as encouraging 
-                    users to take a specific action, such as making a purchase,
-                    signing up for a newsletter, filling out a form, or downloading a resource.</p></b>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="work">
-                <img src="work1.jpg.png">
-                <div class="layer">
-                    <b><H2><br><i>CALCULATOR</i><br></H2>
-                    <p>A calculator is a device or tool used for
-                     performing mathematical calculations.The primary 
-                     purpose of a calculator is to quickly and accurately
-                     perform arithmetic operations such as addition, 
-                     subtraction, multiplication, and division.</p></b>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="work">
-                <img src="work3.jpg.png">
-                <div class="layer">
-                    <b><H2><br><i>NETFLIX CLONE</i><br></H2>
-                    <p>Creating a Netflix clone involves building a streaming platform
-                    that provides similar features and functionalities as Netflix. However,
-                    it's important to note that creating a streaming service like Netflix
-                    involves complex technical, legal, and licensing considerations.</p></b>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+<div class="Features">
+    <div class="row">
+        <div class="text-col">
+            <h2>Enjoy your own TV.</h2>
+            <p>Watch on smart TVs, playstations, Xbox, Chromeset, Apple TV, Blue-ray players and more.</p>
         </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-at"></i>shreyasandhanshive@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>9881720448</p>
-
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
-                    <a href="cv.docx" download class="btn btn2">Download CV</a>
-
-            </div>
-
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+        <div class="img-col">
+            <img src="feature-1.png">
         </div>
     </div>
+
+    <div class="row">
+        <div class="img-col">
+            <img src="feature-2.png">
+        </div>
+        <div class="text-col">
+            <h2>Download your shows to watch Offline.</h2>
+            <p>Save your favourites easily and always have something to watch,.</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="text-col">
+            <h2>Watch everywhere.</h2>
+            <p>Stream unlimited movies and Tv shows on your phone, tablet,laptop and TV</p>
+        </div>
+        <div class="img-col">
+            <img src="feature-3.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="img-col">
+            <img src="feature-4.png">
+        </div>
+        <div class="text-col">
+            <h2>Create profile for children</h2>
+            <p>Send children on adventure with characters in space made just for them.</p>
+        </div>
+    </div>
+</div>    
+
+<div class="faq">
+    <h2>Frequently asked Questions</h2>
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">What is Netflix?</label>
+            <div class="content">
+            <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on 
+                an internet-connected device.Whatever your taste, and no matter where you live, we give you access to best-in-class 
+                TV series, documentaries, feature films and games. Our members control what they want to watch, when they want it,
+                in one simple subscription.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">How much does Netflix cost?</label>
+            <div class="content">
+            <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on 
+                an internet-connected device.Whatever your taste, and no matter where you live, we give you access to best-in-class 
+                TV series, documentaries, feature films and games. Our members control what they want to watch, when they want it,
+                in one simple subscription.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Where can i watch?</label>
+            <div class="content">
+            <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on 
+                an internet-connected device.Whatever your taste, and no matter where you live, we give you access to best-in-class 
+                TV series, documentaries, feature films and games. Our members control what they want to watch, when they want it,
+                in one simple subscription.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">How do I cancel?</label>
+            <div class="content">
+            <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on 
+                an internet-connected device.Whatever your taste, and no matter where you live, we give you access to best-in-class 
+                TV series, documentaries, feature films and games. Our members control what they want to watch, when they want it,
+                in one simple subscription.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fifth">
+            <label for="fifth">What can I watch on Netflix?</label>
+            <div class="content">
+            <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on 
+                an internet-connected device.Whatever your taste, and no matter where you live, we give you access to best-in-class 
+                TV series, documentaries, feature films and games. Our members control what they want to watch, when they want it,
+                in one simple subscription.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="sixth">
+            <label for="sixth">Is Netflix kid friendly?</label>
+            <div class="content">
+            <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on 
+                an internet-connected device.Whatever your taste, and no matter where you live, we give you access to best-in-class 
+                TV series, documentaries, feature films and games. Our members control what they want to watch, when they want it,
+                in one simple subscription.</p>
+            </div>
+        </li>
+    </ul>
+
+    <small>Ready to watch? enter your email to create or restart your membership</small>
+    <form class="email-signup">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Get started</button>
+    </form>
 </div>
+    
+<div class="footer">
+    <h2>Questions? call 000-000-000-000</h2>
 
+    <div class="row">
+            <div class="col">
+            <a href="#">FAQ</a>
+            <a href="#">Investor relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">SPeed test</a>
+            </div>
 
+            <div class="col">
+                <a href="#">Help center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookies prefrences</a>
+                <a href="#">legal notices</a>
+            </div>    
 
+            <div class="col">
+                    <a href="#">Account</a>
+                    <a href="#">Ways to watch</a>
+                    <a href="#">Corporate information</a>
+                    <a href="#">Only on netflix</a>
+            </div>
 
-<script>    
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+            <div class="col">
+                    <a href="#">Media center</a>
+                    <a href="#">Terms of use</a>
+                    <a href="#">Contact</a>
+            </div>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-        
-        }
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxPaVxhQCJthrh28QcKNIGwhwCdBsYntP8HIvAw2VEah-eedLdjVVOdRPQ7y70Xb9c/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg= document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-                msg.innerHTML = "message sent successfully!"
-                setTimeout(function(){
-                    msg.innerHTML=""
-        }, 5000)
-        form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </div>
+    <button class="language-btn"> English <img src="down-icon.png"></button>
+    <p class="copyright-txt">Netfilx India</p>
+</div>
 
 </body>
 </html>
